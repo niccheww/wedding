@@ -1,0 +1,82 @@
+.glassContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 80%;
+  width: 80%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+.messageBoardBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.messageTitle {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #464646;
+}
+.messageContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 12s linear infinite;
+}
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  color: #555;
+}
+.messageMessage {
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+.messageName {
+  font-size: 12px;
+  font-weight: 700;
+}
+.linkTitle {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.techslideshow {
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  flex: 1;
+}
+
+@keyframes moveSlideshow {
+  0% {
+    transform: translateY(calc(80vh - 65px - 40px));
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
