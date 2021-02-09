@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
   padding: 0 20px;
   overflow-y: auto;
   background: #fff;
@@ -51,10 +51,10 @@
 .buttonContainer {
   margin: 20px 0;
   width: 100%;
-  border-radius: 0.25rem;
+  border-radius: 20px;
   line-height: 1.5;
-  color: #0d6efd;
-  border: 1px solid #0d6efd;
+  background: #9ed8eb;
+  color: #fff;
   cursor: pointer;
 }
 .buttonContainer > div {
@@ -65,15 +65,13 @@
   font-family: Montserrat-Regular;
 }
 .errorContainer {
-  display: flex;
   align-items: center;
-  color: #842029;
-  background-color: #f8d7da;
-  border-color: #f5c2c7;
-  width: 100%;
-  height: 40px;
-  margin-top: 20px;
   border-radius: 7px;
+  color: #d42c58;
+  display: flex;
+  height: 20px;
+  margin-top: 20px;
+  width: 100%;
 }
 .errorContainer > span {
   padding-left: 12px;

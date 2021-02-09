@@ -1,0 +1,11 @@
+.menuContainer {
+  align-items: center;
+  border-top: 1px solid #ededed;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.icon {
+  height: 30px;
+}
