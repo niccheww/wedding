@@ -1,12 +1,6 @@
 import "./App.css";
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useHistory,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Dashboard from "./components/dashboard/dashboard";
 import MessageBoard from "./components/message-board/message-board";
@@ -15,7 +9,6 @@ import NoMatch from "./components/no-match/no-match";
 import Menu from "./components/menu/menu";
 
 function App() {
-  let history = useHistory();
   return (
     <Router>
       <div className="App">

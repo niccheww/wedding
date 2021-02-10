@@ -2,5 +2,5 @@
   background: url("../../assets/image/wedding_invitation.jpg") no-repeat center
     fixed;
   background-size: contain;
-  height: calc(100vh - 61px);
+  flex: 1;
 }
