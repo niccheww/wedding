@@ -1,12 +1,10 @@
 :root {
-  --app-height: 100% - 61px;
+  --app-height: 100%;
 }
 
 .mainBody {
   background: url("../../assets/image/wedding_invitation.jpg") no-repeat center
     fixed;
   background-size: contain;
-  /* flex: 1; */
-  /* height: calc(100vh - 61px); */
-  height: var(--app-height);
+  height: calc(var(--app-height) - 61px);
 }

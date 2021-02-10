@@ -1,12 +1,12 @@
 :root {
-  --app-height: 100% - 61px;
+  --app-height: 100%;
 }
 
 .messageInputBody {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: var(--app-height);
+  height: calc(var(--app-height) - 61px);
   padding: 0 20px;
   overflow-y: auto;
   background: #fff;
