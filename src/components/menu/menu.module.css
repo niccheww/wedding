@@ -1,6 +1,6 @@
 .menuContainer {
   align-items: center;
-  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
   display: flex;
   height: 60px;
   justify-content: space-between;
