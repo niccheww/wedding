@@ -1,14 +1,26 @@
 import axios from "axios";
 import style from "./message-input.module.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Loader from "../loader/loader";
+
+const appHeight = () => {
+  const doc = document.documentElement;
+  doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+};
 
 function MessageInput() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [messageError, setMessageError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    window.addEventListener("resize", appHeight);
+    appHeight();
+    return () => {
+      window.removeEventListener("resize", appHeight);
+    };
+  }, []);
 
   const sendMessage = () => {
     setIsLoading(true);
