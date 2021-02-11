@@ -1,10 +1,12 @@
 .menuContainer {
   align-items: center;
-  border-bottom: 1px solid #ededed;
+  bottom: 0;
+  background-color: #dfd3c3;
   display: flex;
   height: 60px;
   justify-content: space-between;
-  padding: 0 30px;
+  position: fixed;
+  width: 100%;
 }
 .icon {
   height: 30px;

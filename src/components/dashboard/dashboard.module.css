@@ -2,4 +2,6 @@
   background: url("../../assets/image/wedding_invitation.jpg") no-repeat center
     fixed;
   background-size: contain;
+  height: 100%;
+  padding-bottom: 61px;
 }

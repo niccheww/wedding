@@ -12,7 +12,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Menu />
         <Switch>
           <Route exact path="/">
             <Dashboard />
@@ -27,6 +26,7 @@ function App() {
             <NoMatch />
           </Route>
         </Switch>
+        <Menu />
       </div>
     </Router>
   );
