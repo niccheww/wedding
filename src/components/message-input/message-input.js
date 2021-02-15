@@ -41,7 +41,6 @@ function MessageInput() {
         setIsLoading(false);
       });
   };
-  console.log(isLoading);
   return (
     <div className={style.messageInputBody}>
       {isLoading && <Loader />}

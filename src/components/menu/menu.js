@@ -25,7 +25,7 @@ function Header() {
         src={MegaPhone}
         className={styles.icon}
         alt="megaphone"
-        onClick={() => history.push("/")}
+        onClick={() => history.push("/yamseng")}
       />
     </div>
   );
