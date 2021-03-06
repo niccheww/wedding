@@ -4,6 +4,8 @@ import React, { useState } from "react";
 
 import Loader from "../loader/loader";
 
+const URL_ADDRESS = "http://localhost:5000/";
+
 function MessageInput() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -26,7 +28,7 @@ function MessageInput() {
     }
 
     axios
-      .post(`http://localhost:5000/message/`, {
+      .post(`${URL_ADDRESS}message/`, {
         message: updatedMessage,
         name: updatedName,
       })

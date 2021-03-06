@@ -3,22 +3,21 @@ import React, { useState } from "react";
 import { useInterval } from "../../hooks/useInterval";
 import style from "./message-board.module.css";
 
+const URL_ADDRESS = "http://localhost:5000/";
+
 function MessageBoard() {
   const [messages, setMessages] = useState([]);
 
   useInterval(() => {
-    console.log("enter");
     axios
-      .get(`http://localhost:5000/message/`)
+      .get(`${URL_ADDRESS}message/`)
       .then((result) => {
-        console.log(result);
         setMessages(result.data);
       })
       .catch((error) => {
         console.log("error occured:", error);
       });
   }, 5000);
-  // console.log(messages);
   const messageContainer = messages.map((message) => {
     return (
       <div className={style.messageBox} key={message.id}>
