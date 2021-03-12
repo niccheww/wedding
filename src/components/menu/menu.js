@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import styles from "./menu.module.css";
 import Heart from "../../assets/icons/heart.svg";
 import Home from "../../assets/icons/home.svg";
-import MegaPhone from "../../assets/icons/megaphone.svg";
 
 function Header() {
   let history = useHistory();
@@ -20,12 +19,6 @@ function Header() {
         className={styles.icon}
         alt="heart"
         onClick={() => history.push("/wellwish")}
-      />
-      <img
-        src={MegaPhone}
-        className={styles.icon}
-        alt="megaphone"
-        onClick={() => history.push("/yamseng")}
       />
     </div>
   );

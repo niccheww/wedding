@@ -7,7 +7,6 @@ import MessageBoard from "./components/message-board/message-board";
 import MessageInput from "./components/message-input/message-input";
 import NoMatch from "./components/no-match/no-match";
 import Menu from "./components/menu/menu";
-import YamSeng from "./components/yamseng/yamseng";
 
 function App() {
   return (
@@ -22,9 +21,6 @@ function App() {
           </Route>
           <Route path="/wellwish">
             <MessageInput />
-          </Route>
-          <Route path="/yamseng">
-            <YamSeng />
           </Route>
           <Route path="*">
             <NoMatch />

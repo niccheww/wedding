@@ -1,7 +1,20 @@
 .mainBody {
-  background: url("../../assets/image/wedding_invitation.jpg") no-repeat center
+  background: url("../../assets/image/BenSwenWallpaper.png") no-repeat center
     fixed;
-  background-size: contain;
+  background-size: cover;
   height: 100%;
   padding-bottom: 61px;
+}
+.mainTitle,
+.mainTitle2 {
+  color: #fff;
+  font-family: Montserrat-SemiBold;
+  font-size: 65px;
+  text-align: center;
+}
+.mainTitle {
+  margin-top: 88px;
+}
+.mainTitle2 {
+  margin-top: 12px;
 }
