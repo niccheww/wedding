@@ -49,7 +49,6 @@ function MessageInput() {
       <div className={messageError.length !== 0 ? style.errorContainer : null}>
         <span>{messageError}</span>
       </div>
-
       <div className={style.inputMainBody}>
         <label className={style.inputLabel}>Name</label>
         <input
@@ -59,7 +58,6 @@ function MessageInput() {
           onChange={(e) => setName(e.target.value)}
         />
       </div>
-
       <div className={style.inputMainBody}>
         <label className={style.inputLabel}>Message</label>
         <textarea
@@ -69,9 +67,8 @@ function MessageInput() {
           onChange={(e) => setMessage(e.target.value)}
         />
       </div>
-
       <div className={style.buttonContainer} onClick={sendMessage}>
-        <div>SEND</div>
+        <div>Send Message</div>
       </div>
     </div>
   );

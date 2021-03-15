@@ -1,4 +1,4 @@
-.mainBody {
+/* .mainBody {
   background: url("../../assets/image/BenSwenWallpaper.png") no-repeat center
     fixed;
   background-size: cover;
@@ -17,4 +17,45 @@
 }
 .mainTitle2 {
   margin-top: 12px;
+} */
+
+.mainBody, .section1Body, .section2Body {
+  height: 100%;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+.section1Body {
+  align-items: center;
+  background: url("../../assets/image/BenSwenWallpaper.png") no-repeat center
+  fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+.section2Body {
+  background-color: #fff;
+}
+.section1Line1 {
+  color: #fff;
+  font-family: Montserrat-Regular;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.section1Line2 {
+  color: #fff;
+  font-family: Montserrat-SemiBold;
+  font-size: 70px;
+}
+.section1ButtonContainer {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  font-family: Montserrat-Regular;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 17px;
+  margin-top: 50px;
+  padding: 15px 30px;
+  text-decoration: none;
 }

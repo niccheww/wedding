@@ -4,9 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Dashboard from "./components/dashboard/dashboard";
 import MessageBoard from "./components/message-board/message-board";
-import MessageInput from "./components/message-input/message-input";
-import NoMatch from "./components/no-match/no-match";
-import Menu from "./components/menu/menu";
 
 function App() {
   return (
@@ -19,14 +16,7 @@ function App() {
           <Route path="/message-board">
             <MessageBoard />
           </Route>
-          <Route path="/wellwish">
-            <MessageInput />
-          </Route>
-          <Route path="*">
-            <NoMatch />
-          </Route>
         </Switch>
-        <Menu />
       </div>
     </Router>
   );
