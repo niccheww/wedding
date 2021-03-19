@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import { useInterval } from "../../hooks/useInterval";
 import style from "./message-board.module.css";
 
-const URL_ADDRESS = "http://localhost:5000/";
+// http://54.169.187.226
+// http://localhost:5000/
+const URL_ADDRESS = "http://54.169.187.226/";
 
 function MessageBoard() {
   const [messages, setMessages] = useState([]);

@@ -4,7 +4,9 @@ import React, { useState } from "react";
 
 import Loader from "../loader/loader";
 
-const URL_ADDRESS = "http://localhost:5000/";
+// http://54.169.187.226
+// http://localhost:5000/
+const URL_ADDRESS = "http://54.169.187.226/";
 
 function MessageInput() {
   const [name, setName] = useState("");
