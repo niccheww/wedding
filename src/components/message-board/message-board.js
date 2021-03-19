@@ -35,8 +35,7 @@ function MessageBoard() {
         <div className={style.techslideshow}>
           <div className={style.messageContainer}>{messageContainer}</div>
         </div>
-
-        <div className={style.linkTitle}>Link</div>
+        <div className={style.linkTitle}>http://benjaminswenwedding.tk/</div>
       </div>
     </div>
   );
