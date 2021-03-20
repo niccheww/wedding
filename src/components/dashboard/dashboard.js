@@ -9,7 +9,7 @@ function Dashboard() {
     }
     event.preventDefault();
     const scrollToElem = document.getElementById("well-wish");
-    SmoothVerticalScrolling(scrollToElem, 300, "top");
+    SmoothVerticalScrolling(scrollToElem, 400, "top");
   }
   function supportsSmoothScrolling() {
     const body = document.body;
@@ -21,7 +21,8 @@ function Dashboard() {
   }
   function SmoothVerticalScrolling(element, time, position) {
     var eTop = element.getBoundingClientRect().top;
-    var eAmt = eTop / 100;
+    console.log(eTop);
+    var eAmt = eTop / 100 + 20;
     var curTime = 0;
     while (curTime <= time) {
       window.setTimeout(SVS_B, curTime, eAmt, position);
