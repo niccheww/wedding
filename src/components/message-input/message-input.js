@@ -55,7 +55,7 @@ function MessageInput() {
         <label className={style.inputLabel}>Name</label>
         <input
           className={style.inputBody}
-          placeholder="optional"
+          placeholder="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
