@@ -46,7 +46,7 @@
   flex-direction: column;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 20s linear infinite;
+  animation: moveSlideshow 30s linear infinite;
   /* original 12s */
 }
 .messageBox {
